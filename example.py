@@ -3,7 +3,7 @@
 from dovewallet import dovewallet
 
 # Get these from https://dovewallet.com/en/my-page/api
-api = bittrex('key', 'secret')
+api = dovewallet('key', 'secret')
 
 # Market to trade at
 trade = 'BTC'
