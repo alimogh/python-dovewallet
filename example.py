@@ -34,4 +34,4 @@ api.selllimit(market, amount, dogeprice)
 dogebalance = api.getbalance(currency)
 print "Your balance is {0} {1}.".format(dogebalance['Available'], currency)
 
-# For a full list of functions, check out bittrex.py or https://bittrex.com/Home/Api
+# For a full list of functions, check out dovewallet.py or https://bittrex.com/Home/Api
