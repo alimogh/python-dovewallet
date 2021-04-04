@@ -1,7 +1,7 @@
-python-bittrex
+python-dovewallet
 =
 
-python-bittrex is a Python library for the Bittrex API v1.1.
+python-dovewallet is a Python library for the Dovewallet API v1.1.
 
 Use this to sell mined coins, write a trading bot or do whatever your heart desires.
 
@@ -12,9 +12,9 @@ Getting started
 Get your API keys from https://bittrex.com/Account/ManageApiKey, download bittrex.py and place it in the same directory as your script.
 
     #!/usr/bin/env python
-    from bittrex import bittrex
+    from dovewallet import dovewallet
     
-    api = bittrex('key', 'secret')
+    api = dovewallet('key', 'secret')
     
     print api.getticker('BTC-DOGE')
 
