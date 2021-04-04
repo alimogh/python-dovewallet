@@ -1,9 +1,9 @@
-python-dovewallet
+Python-Dovewallet
 =
 
-python-dovewallet is a Python library for the Dovewallet API v1.1.
+Python-Dovewallet is a Python library for the Dovewallet API v1.1.
 
-Use this to sell mined coins, write a trading bot or do whatever your heart desires.
+Use this to sell mined coins, write 3 trading bots or do whatever your heart desires.
 
 
 Getting started
