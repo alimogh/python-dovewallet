@@ -6,29 +6,30 @@ from dovewallet import dovewallet
 api = dovewallet('key', 'secret')
 
 # Market to trade at
+fee = 0.001
 trade = 'ETH'
 currency = 'DGB'
 market = '{0}-{1}'.format(trade, currency)
 # Amount of coins to buy
-amount = 50
+amount = 10
 # How big of a profit you want to make
-multiplier = 1.1
+multiplier = 1.02 + (2*fee)
 
 # Getting the ETH price for DGB
 dgbsummary = api.getmarketsummary(market)
 dgbprice = dgbsummary[0]['Last']*0.995
 print 'The price for {0} is {1:.8f} {2}.'.format(currency, dgbprice, trade)
 
-# Buying 50 DGB for ETH
+# Buying 10 DGB for ETH
 print 'Buying {0} {1} for {2:.8f} {3}.'.format(amount, currency, dgbprice, trade)
 api.buylimit(market, amount, dgbprice)
 
 # Multiplying the price by the multiplier
 dgbprice = round(dgbprice*multiplier, 8)
 
-# Selling 50 DGB for the  new price
+# Selling 9.98 DGB for the  new price
 print 'Selling {0} {1} for {2:.8f} {3}.'.format(amount, currency, dgbprice, trade)
-api.selllimit(market, amount, dgbprice)
+api.selllimit(market, amount, dgbprice*(1-(2*fee)))
 
 # Gets the DGB balance
 dgbbalance = api.getbalance(currency)
