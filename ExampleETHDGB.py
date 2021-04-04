@@ -16,7 +16,7 @@ multiplier = 1.1
 
 # Getting the ETH price for DGB
 dgbsummary = api.getmarketsummary(market)
-dgbprice = dgbsummary[0]['Last']
+dgbprice = dgbsummary[0]['Last']*0.995
 print 'The price for {0} is {1:.8f} {2}.'.format(currency, dgbprice, trade)
 
 # Buying 50 DGB for ETH
