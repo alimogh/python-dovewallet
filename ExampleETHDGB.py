@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# This program buys some Dogecoins and sells them for a bigger price
+# This program buys some Dgbcoins and sells them for a bigger price
 from dovewallet import dovewallet
 
 # Get these from https://dovewallet.com/en/my-page/api
@@ -24,7 +24,7 @@ print 'Buying {0} {1} for {2:.8f} {3}.'.format(amount, currency, dgbprice, trade
 api.buylimit(market, amount, dgbprice)
 
 # Multiplying the price by the multiplier
-dogeprice = round(dgbprice*multiplier, 8)
+dgbprice = round(dgbprice*multiplier, 8)
 
 # Selling 50 DGB for the  new price
 print 'Selling {0} {1} for {2:.8f} {3}.'.format(amount, currency, dgbprice, trade)
