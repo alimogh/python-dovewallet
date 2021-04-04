@@ -9,7 +9,7 @@ Use this to sell mined coins, write a trading bot or do whatever your heart desi
 Getting started
 =
 
-Get your API keys from https://dovewallet.com/en/my-page/api, download bittrex.py and place it in the same directory as your script.
+Get your API keys from https://dovewallet.com/en/my-page/api, download dovewallet.py and place it in the same directory as your script.
 
     #!/usr/bin/env python
     from dovewallet import dovewallet
