@@ -8,7 +8,7 @@ import time
 import hmac
 import hashlib
 
-class bittrex(object):
+class dovewallet(object):
     
     def __init__(self, key, secret):
         self.key = key
@@ -20,11 +20,11 @@ class bittrex(object):
     
     def query(self, method, values={}):
         if method in self.public:
-            url = 'https://bittrex.com/api/v1.1/public/'
+            url = 'https://api.dovewallet.com/v1.1/public/'
         elif method in self.market:
-            url = 'https://bittrex.com/api/v1.1/market/'
+            url = 'https://api.dovewallet.com/v1.1/market/'
         elif method in self.account: 
-            url = 'https://bittrex.com/api/v1.1/account/'
+            url = 'https://api.dovewallet.com/v1.1/account/'
         else:
             return 'Something went wrong, sorry.'
         
