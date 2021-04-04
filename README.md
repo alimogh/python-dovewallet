@@ -16,7 +16,7 @@ Get your API keys from https://dovewallet.com/en/my-page/api, download bittrex.p
     
     api = dovewallet('key', 'secret')
     
-    print api.getticker('BTC-DOGE')
+    print api.getticker('BTC-DASH')
 
 
 example.py
@@ -24,4 +24,4 @@ example.py
 
 The example program buys 100 DOGE for the current price and sells them for a higher price. It also shows some other functions.  
 
-Check out https://bittrex.com/Home/Api or read the source code for a full list of functions.
+Check out https://developer.dovewallet.com/api/v1/ or read the source code for a full list of functions.
