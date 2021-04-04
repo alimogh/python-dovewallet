@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # This program buys some Dogecoins and sells them for a bigger price
-from bittrex import bittrex
+from dovewallet import dovewallet
 
-# Get these from https://bittrex.com/Account/ManageApiKey
+# Get these from https://dovewallet.com/en/my-page/api
 api = bittrex('key', 'secret')
 
 # Market to trade at
