@@ -1,4 +1,4 @@
-Python-Dovewallet
+Python-BtxPro(Dovewallet)
 =
 
 Python-Dovewallet is a Python library for the Dovewallet API v1.1.
